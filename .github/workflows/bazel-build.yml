@@ -18,7 +18,7 @@ jobs:
         run: |
           bazel build //:hello
 
-      - name Run binary
+      - name: Run binary
         run: |
           bazel run //:hello
 
