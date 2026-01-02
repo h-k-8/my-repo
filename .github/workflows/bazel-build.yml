@@ -20,5 +20,5 @@ jobs:
 
       - name Run binary
         run: |
-      ./bazel-bin/hello
+          bazel run //:hello
 
