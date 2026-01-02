@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name:Move to repo root
+      - name: Move to repo root
       - run: cd $GITHUB_WORKSPACE
 
       - name: Build with Bazel
