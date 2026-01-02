@@ -15,10 +15,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build with Bazel
+        working-directory: .
         run: |
           bazel build //:hello
 
       - name: Run binary
+        working-directory: .
         run: |
           bazel run //:hello
 
