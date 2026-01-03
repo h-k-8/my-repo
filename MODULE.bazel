@@ -1,0 +1,5 @@
+module(
+    name = "bazel_github_actionos_sample",
+    version = "0.1",
+)
+
