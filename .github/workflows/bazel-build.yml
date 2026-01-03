@@ -16,18 +16,18 @@ jobs:
 
       - name: Move to repo root
         run: |
-          cd /home/kajikaji/my-repo
+          cd $GITHUB_WORKSPACE
           pwd
           ls -la
 
       - name: Build with Bazel
         run: |
-          cd /home/kajikaji/my-repo
+          cd $GITHUB_WORKSPACE
           bazel build //:hello
 
       - name: Run binary
         run: |
-          cd /home/kajikaji/my-repo
+          cd $GITHUB_WORKSPACE
           bazel run //:hello
 
 
