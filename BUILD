@@ -1,5 +1,5 @@
 cc_binary(
-	name = "HELLO",
+	name = "hello",
 	srcs = ["main.cc"],
 )
 
