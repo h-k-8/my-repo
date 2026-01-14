@@ -1,2 +1,9 @@
-name: Invalid
+name: valid
 on: push
+jobs:
+  print:
+    runs-on:ubuntu-lastest
+    steps:
+      - shell: bash
+        run: echo "${SHELL}"
+
